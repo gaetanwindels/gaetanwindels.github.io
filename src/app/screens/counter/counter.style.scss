@@ -1,0 +1,28 @@
+#chrono {
+
+}
+
+.clock {
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  border: 40px grey solid;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 20vw;
+  text-align: center;
+  line-height: 45vw;
+  color: black;
+}
+
+.series-count {
+  color: black;
+  margin-top: 30px;
+  font-size: 150px;
+  text-align: center;
+}
+
+.remaining-series {
+  margin-top: 50px;
+}

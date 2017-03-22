@@ -1,0 +1,16 @@
+<div id="chrono">
+    <header-chrono [title]="title"></header-chrono>
+
+    <div class="clock">
+        {{ restTime }}
+    </div>
+    <div class="button" [ngClass]="{'disabled' : restActive }" (click)="startRest()">{{ getButtonText() }}</div>
+
+    <div class="remaining-series">
+        <h1>Séries restantes</h1>
+        <div class="series-count">
+            {{ serieCount }}
+        </div>
+
+    </div>
+</div>

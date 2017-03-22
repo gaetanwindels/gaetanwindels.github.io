@@ -1,0 +1,24 @@
+<div id="component">
+    <header-chrono [title]="title"></header-chrono>
+    <h1>Nombre de séries</h1>
+
+    <div class="counter">
+        <div (click)="decreaseCount()" class="button-square button-minus">-</div>
+        <div class="count-number">{{ countSerie }}</div>
+        <div (click)="increaseCount()" class="button-square button-plus">+</div>
+    </div>
+
+    <h1>Temps de repos</h1>
+    <div class="counter">
+        <div (click)="decreaseRestCount()" class="button-square button-minus">-</div>
+        <div class="count-number">{{ formattedCountRest }}</div>
+        <div (click)="increaseRestCount()" class="button-square button-plus">+</div>
+    </div>
+    <div class="button button-restart" (click)="sayHello()" routerLinkActive="active">
+        Charger dernier
+    </div>
+
+    <div class="button button-bottom" (click)="goToCount()">
+        Commencer
+    </div>
+</div>
