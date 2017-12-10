@@ -1,0 +1,7 @@
+<div class="wrapper">
+  <div class="day" *ngFor="let text of texts; let i = index; let isOdd=odd; let isEven=even">
+    <app-day [class.odd]="isOdd" [class.even]="isEven" [number]="i+1" [text]="text"></app-day>
+  </div>
+</div>
+
+<app-modal></app-modal>
